@@ -51,8 +51,24 @@
     <section class="section service">
         <div class="container">
             <h1 class="service-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-            <button class="service-button" type="button">Замовити послугу</button>
-        </div>    
+           
+            <button data-model-open class="service-button" type="button">Замовити послугу</button>
+           
+            <div class="backdrop is-hidden" data-modal>
+                 
+                <div class="modal-wrapper">
+                     <script src="./modal.js">
+                    <button class="modal-button" data-modal-close type="button">
+                        <svg width="11" height="11">
+                            <use href="./images-sprite/symbol-defs-modal-close.svg#close-black-18dp-2-1"
+                        </svg>
+                    </button>
+                    </script> 
+                </div>
+                
+            </div>
+                       
+        </div> 
     </section>
     <section class="section main-content">
         <div class="container">
@@ -116,13 +132,22 @@
             <h2 class="work-title">Чим ми займаємось</h2>
             <ul class="work-list list">
                 <li class="work-item">
-                    <img src="./images webstudio/computer.jpg" alt="Руки чоловіка на клавіатурі на фоні планшета з написаним кодом" width="370" height="294">
+                    <img src="./images webstudio/computer.jpg" 
+                    alt="Руки чоловіка на клавіатурі на фоні планшета з написаним кодом" 
+                    width="370" height="294"/>
+                    <p class="work-text">Десктопні додатки</p>
                 </li>
                 <li class="work-item">
-                    <img src="./images webstudio/telephone.jpg" alt="Телефон в долоні перед компьютерним єкраном з макетами телефонів" width="370" height="294">
+                    <img src="./images webstudio/telephone.jpg" 
+                    alt="Телефон в долоні перед компьютерним єкраном з макетами телефонів" 
+                    width="370" height="294"/>
+                    <p class="work-text">Мобільні додатки</p>
                 </li>
                 <li class="work-item">
-                    <img src="./images webstudio/tablet.jpg" alt="Планшет зі зразком палітри кольорів у руці жінки" width="370" height="294">
+                    <img src="./images webstudio/tablet.jpg" 
+                    alt="Планшет зі зразком палітри кольорів у руці жінки" 
+                    width="370" height="294"/>
+                    <p class="work-text">Дизайнерські рішення</p>
                 </li>
             </ul>
         </div>
